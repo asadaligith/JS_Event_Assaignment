@@ -28,22 +28,33 @@ function shortPara(){
 
 function result(){
     let name = document.getElementById("username").value
-    let email = document.getElementById("email").value
-    
-    if (name === "" && email === ""){
-        alert("Please Enter Your Name and Email");
-    }
-    else if (name === ""){
+    if (name === ""){
         alert("Please Enter Your Name");
     }
-    else if (email === ""){
+    console.log(name);
+}
+
+function result2(){    
+    let email = document.getElementById("email").value
+    if (email === ""){
         alert("Please Enter Your Email");
     }
-    else{
-        alert("Form Submitted Successfully");
-    }
-
-    console.log(name);
     console.log(email);
 }
 
+// Assainment 3rd
+let isImage = false;
+
+function insertImage(){
+    if (isImage == false){
+        document.getElementById("img").innerHTML =`
+        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100% ; object-fit:cover" > `; 
+        console.log(img);
+        isImage = true;
+    }
+    else{
+        document.getElementById("img").innerHTML = "";
+        console.log(img);
+        isImage = false;
+    }
+}

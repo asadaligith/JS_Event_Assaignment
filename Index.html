@@ -21,6 +21,16 @@
         border: none;
         cursor: pointer;
     }
+    #img-btn{
+        padding: 10px;
+        font-size: 20px;
+        margin : 20px;
+        background-color: rgb(92, 92, 247);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
     form{
         margin-top: 50px;
         border : 2px solid black;
@@ -50,8 +60,16 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
             <br><br>
-            <input onclick="result()" type="submit" value="Submit">
+            <input onclick="result(); result2();" type="submit" value="Submit">
         </form>
+
+        <!--3rd Assainment-->
+
+     <div id="img">
+    </div>
+    <button id="img-btn"onclick="insertImage()">click for surprize image</button>
+
+
 
 
     <script src="script.js"></script>
